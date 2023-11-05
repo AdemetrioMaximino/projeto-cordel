@@ -2,8 +2,16 @@
 
 /*Fonte 2 - Passion One*/
 @import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap');
+
 /*Fonte 3 - Sriracha*/
 @import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+/*Desativar o efeito paralaxe no IOS, pos não é compatível com background-attachment: fixed;*/
+@media only screen and (max-device-width: 1366px) {
+    section#img01,section#img02 {
+        background-attachment: scroll;
+    }
+}
 
 :root {
     --fonte1: Verdana, Geneva, Tahoma, sans-serif;
@@ -78,6 +86,7 @@ section.imagem {
     box-shadow: inset 6px 6px 13px 0px black;
     background-size: cover;
     background-attachment: fixed;
+    background-position: right center;
 }
 
 section.imagem > p {
@@ -89,12 +98,10 @@ section.imagem > p {
 
 section#img01 {
     background-image: url(../imagens/background001.jpg);
-    background-position: right center;
 }
 
 section#img02 {
     background-image: url(../imagens/background002.jpg);
-    background-position: right center;
 }
 
 footer {

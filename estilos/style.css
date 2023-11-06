@@ -7,11 +7,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
 
 /*Desativar o efeito paralaxe no IOS, pos não é compatível com background-attachment: fixed;*/
-@media only screen and (max-device-width: 1366px) {
+/*@media only screen and (max-device-width: 1175px) {
     section#img01,section#img02 {
         background-attachment: scroll;
     }
-}
+}*/
 
 :root {
     --fonte1: Verdana, Geneva, Tahoma, sans-serif;
@@ -85,7 +85,7 @@ section.imagem {
     color: white;
     box-shadow: inset 6px 6px 13px 0px black;
     background-size: cover;
-    background-attachment: fixed;
+    /*background-attachment: fixed;*/
     background-position: right center;
 }
 

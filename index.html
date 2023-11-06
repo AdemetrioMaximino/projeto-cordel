@@ -95,5 +95,12 @@
     <footer>
         <p>Site criado por <a href="https://github.com/AdemetrioMaximino" target="_blank">Ademétrio Maximino</a> para o <a href="https://youtube.com/cursoemvideo" target="_blank">CursoemVideo</a></p>
     </footer>
+    <script>
+        var eiphone = window.navigator.platform
+        if (eiphone == 'iPhone') 
+            window.document.querySelector('section.imagem').style.backgroundAttachment= 'scroll'
+        else window.document.querySelector('section.imagem').style.backgroundAttachment= 'fixed'
+        window.document.write(eiphone)
+    </script>
 </body>
 </html>

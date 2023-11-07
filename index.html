@@ -96,11 +96,13 @@
         <p>Site criado por <a href="https://github.com/AdemetrioMaximino" target="_blank">Ademétrio Maximino</a> para o <a href="https://youtube.com/cursoemvideo" target="_blank">CursoemVideo</a></p>
     </footer>
     <script>
-        var eiphone = window.navigator.platform
-        if (eiphone == 'iPhone') 
+        /*Desativar o efeito paralaxe no IOS, pos não é compatível com background-attachment: fixed*/
+        if (window.navigator.platform != 'iPhone') {
+            window.document.querySelector('section#img01').style.backgroundAttachment= 'fixed'
+            window.document.querySelector('section#img02').style.backgroundAttachment= 'fixed'
+        } else { 
             window.document.querySelector('section.imagem').style.backgroundAttachment= 'scroll'
-        else window.document.querySelector('section.imagem').style.backgroundAttachment= 'fixed'
-        window.document.write(eiphone)
+        }
     </script>
 </body>
 </html>
